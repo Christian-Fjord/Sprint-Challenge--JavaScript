@@ -21,7 +21,9 @@ function CuboidMaker(attributes) {
 
 CuboidMaker.prototype.volume = 
     function () {
-    var volume = CuboidMaker.length + CuboidMaker.width + CuboidMaker.height;
+    var theVolume = this.length * this.width * this.height;
+
+    return theVolume;
   }
 
 
@@ -35,7 +37,9 @@ CuboidMaker.prototype.volume =
 
 CuboidMaker.prototype.surfaceArea = 
     function () {
-    let surfaceArea = CuboidMaker.length * CuboidMaker.width * CuboidMaker.height;
+    var theSA = this.length * this.width + this.length * this.height + this.width * this.height;
+
+    return theSA * 2;
   }
 
  
