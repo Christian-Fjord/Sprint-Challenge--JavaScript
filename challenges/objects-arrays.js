@@ -111,7 +111,7 @@ console.log(contactInfo);
 const uni = [];
 
 for (i = 0; i < graduates.length; i++) {
-  if (graduates.university == "University" ) {
+  if (graduates[i].university.includes("Uni")) {
     uni.push(graduates[i]);
   }
 }
@@ -142,7 +142,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 */
 const animalNames = []
 
-zooAnimals.forEach(function(zooAnimals) {
+zooAnimals.forEach(zooAnimals => {
   animalNames.push(`Name: ${zooAnimals.animal_name} , Scientific: ${zooAnimals.scientific_name}`);
 });
 

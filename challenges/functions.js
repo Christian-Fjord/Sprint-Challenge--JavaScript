@@ -28,11 +28,11 @@ function multiply(x,y) {
 }
 
 function greeting(x,y) {
-  console.log(`Hello ${x } ${y}, nice to meet you!`);
+  return `Hello ${x } ${y}, nice to meet you!`;
 }
 
 console.log(consume(3,4,add));
-console.log(consume(3,4,add));
+console.log(consume(3,4,multiply));
 console.log(consume("Christian", "Ford", greeting));
 
 
